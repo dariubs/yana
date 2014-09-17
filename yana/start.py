@@ -1,5 +1,6 @@
 import os
-import json
+import json 
+import codecs
  
 class Start:
     def __init__(self):
