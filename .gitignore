@@ -55,3 +55,4 @@ target/
 
 #ide's
 .project
+.idea

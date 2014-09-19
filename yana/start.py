@@ -1,6 +1,5 @@
 import os
-import json 
-import codecs
+import json
  
 class Start:
     def __init__(self):
@@ -8,24 +7,28 @@ class Start:
         self.siteTitle = "";
         self.siteAuthor = "";
         self.siteRepo = "";
+        self.done = 0
      
-    def create(self,siteName,siteTitle,siteAuthor,siteRepo) :
+    def create(self,siteName,siteTitle=None,siteAuthor=None,siteRepo=None) :
         self.siteName = siteName;
         self.siteTitle = siteTitle;
         self.siteAuthor = siteAuthor;
         self.siteRepo = siteRepo;
- 
-        if not os.path.exists(self.siteName) :
 
-            data = json.dumps({"title" : self.siteTitle , "author" : self.siteAuthor, "repository" : self.siteRepo});
-            os.makedirs(self.siteName);
-            config = open(self.siteName+'/yana.json','w+');
-            config.write(data);
-            print("your site created successfully :)");
+        try :
+            if not os.path.exists(self.siteName) :
+                data = json.dumps({"title" : self.siteTitle , "author" : self.siteAuthor, "repository" : self.siteRepo});
+                os.makedirs(self.siteName);
+                config = open(self.siteName+'/yana.json','w+');
+                config.write(data);
+                print("your site created successfully :)");
 
-        else :
+            else :
+                print("This directory currently exits.Chose another name or delete directory");
+            self.done = 1
+        except :
+            self.done = 0
 
-            print("This directory currently exits.Chose another name or delete directory");
 
 
 
