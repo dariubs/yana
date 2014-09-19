@@ -7,10 +7,10 @@ class Post:
 
     def add(self, postName):
         self.postName = postName;
-        if not os.path.exists("post"):
-            os.makedirs("post");
+        if not os.path.exists("posts"):
+            os.makedirs("posts");
 
-        self.post = open("post/" + self.postName + ".md", 'w+')
+        self.post = open("posts/" + self.postName + ".md", 'w+')
 
         self.post.close()
         self.done = 1
@@ -21,8 +21,8 @@ class Post:
     def delete(self, postName):
         self.postName = postName;
 
-        if os.path.exists("post/" + self.postName + ".md"):
-            os.remove("post/" + self.postName + ".md");
+        if os.path.exists("posts/" + self.postName + ".md"):
+            os.remove("posts/" + self.postName + ".md");
         else:
             print("This post not exists.");
 
