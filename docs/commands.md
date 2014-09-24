@@ -34,3 +34,9 @@ Run Site On local server
 yana start
 ```
 
+Help
+-----
+```
+yana help
+```
+
