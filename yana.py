@@ -1,5 +1,8 @@
 import sys
+import os
 from yana import start
+from yana import posts
+
 
 
 def main():
@@ -16,7 +19,7 @@ def main():
     elif commands[1] in sys.argv:
         post()
     elif commands[2] in sys.argv:
-        ls
+        ls()
     elif commands[3] in sys.argv:
         export()
     elif commands[4] in sys.argv:
@@ -42,9 +45,15 @@ def create():
     start_var.create(site_name,site_title,author,repo)
 
 def post():
-    pass
-    #check if yana.json exists
-        #create post
+    if os.path.exists('yana.json'):
+        print('enter post name *: ')
+        post_name = input()
+
+        post_var = posts.Post()
+        post_var.add(post_name)
+    else:
+        print("here's not a yana site folder.\ntry 'yana create'")
+
 
 def ls():
     pass
