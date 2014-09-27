@@ -56,7 +56,10 @@ def post():
 
 
 def ls():
-    pass
+    files_list = [_file for _file in os.listdir('.') if os.path.isfile(_file)]
+
+    for _file in files_list :
+        print(_file)
 
 def export():
     pass

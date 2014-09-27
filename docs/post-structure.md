@@ -3,12 +3,21 @@ Raw Post Structure
 
 Post have to create in [Markdown](http://daringfireball.net/projects/markdown/syntax) syntax.
 
+Structure
+-----
 
-Read More
+
+\#post title
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur ducimus eum ipsum obcaecati possimus praesentium saepe sed suscipit tenetur voluptatibus? Corporis distinctio dolore, dolorum magnam nihil nisi ut vitae voluptates.
+
+
+Add 'Read More'
 -----
 
 Add read more with :
 ```
 ~==>
 ```
+
 
