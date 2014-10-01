@@ -38,3 +38,26 @@ class BasePost :
         if not os.path.exists(self.path):
             os.makedirs(self.path);
 
+class BasePath:
+    def __init__(self):
+        
+
+    def get_path(self):
+        #get current directory
+        pass
+
+    def make_path(self,directory_type,file_name):
+        #make Path using current position, dirctory type (like posts) and file name like(hello.md)
+        pass
+
+class BaseFileName:
+    def __init__(self,filename):
+        self.filename = filename
+
+    def get_filename(self):
+        #return filename with complete path
+        pass
+        
+        
+
+
