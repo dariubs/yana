@@ -40,7 +40,7 @@ class BasePost :
 
 class BasePath:
     def __init__(self):
-        
+        pass
 
     def get_path(self):
         #get current directory
