@@ -1,6 +1,12 @@
 Raw Post Structure
 =====
 
+1. Markdown Posts
+2. DB Posts
+
+
+markdown
+====
 Post have to create in [Markdown](http://daringfireball.net/projects/markdown/syntax) syntax.
 
 Structure
@@ -20,4 +26,6 @@ Add read more with :
 ~==>
 ```
 
-
+DB
+====
+go database.md
