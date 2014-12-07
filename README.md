@@ -1,4 +1,4 @@
-yana [![Build Status](https://travis-ci.org/edrock/yana.svg)](https://travis-ci.org/edrock/yana) [![Requirements Status](https://requires.io/github/edrock/yana/requirements.svg?branch=master)](https://requires.io/github/edrock/yana/requirements/?branch=master)
+yana [![Build Status](https://travis-ci.org/dariubs/yana.svg)](https://travis-ci.org/dariubs/yana) [![Requirements Status](https://requires.io/github/edrock/yana/requirements.svg?branch=master)](https://requires.io/github/edrock/yana/requirements/?branch=master)
 ====
 <img src="https://rawgit.com/edrock/yana/master/artworks/logo/yana.svg">
 ----
